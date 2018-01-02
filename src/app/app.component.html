@@ -1,20 +1,63 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<script>
+  $(function () {
+    var d1 = moment.utc().tz("America/Los_Angeles").format('YYYY-MM-DD HH:mm:ss ');
 
+    var clock = $('#retroclockbox1').FlipClock(new Date(d1), {
+      clockFace: 'TwelveHourClock',
+      showSeconds: false
+    });
+    init();
+  });
+</script>
+<div class="wrapper">
+  <div class="box">
+    <div class="row row-offcanvas row-offcanvas-left">
+      <table><tr>
+        <td style="width: 30%">
+          <div  id="logomain">
+            <img class="cdk" src="../assets/CDK_Logo_reverse.png">
+            <span class="appTitleText">BI JOB MONITOR</span>
+          </div>
+        </td>  <!-- main right col -->
+        <td style="width: 50%">
+          <div class="column col-md-6 col-sm-10 col-xs-8" id="main">
+
+            <!-- top nav -->
+            <div class="navbar navbar-blue">
+              <nav class="collapse navbar-collapse" role="navigation">
+                <ul id="navMain" class="nav navbar-nav ">
+                  <li>
+                    <a id="Todays Live Status" [routerLink] = "['/live']">Todays Live Status</a>
+                  </li>
+                  <li>
+                    <a href="status.html">Job History</a>
+                  </li>
+                  <li>
+                    <a href="perf.html">Performance</a>
+                  </li>
+                  <li>
+                    <a href="jobMetaData.html">Job Metadata</a>
+                  </li>
+                  <li>
+                    <a href="teamMetaData.html">Team Metadata</a>
+                  </li>
+                </ul>
+
+              </nav>
+            </div>
+            <!-- /top nav -->
+          </div>
+        </td>
+        <td style="width: 20%">
+          <div class="column col-md-3 col-sm-1 col-xs-2" id="refreshMain">
+            <nav class="collapse navbar-collapse" role="navigation">
+              <div id="retroclockbox1"></div>
+            </nav>
+          </div>
+        </td>
+      </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

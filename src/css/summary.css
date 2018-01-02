@@ -1,0 +1,49 @@
+
+
+.searchJob {
+    /*width: 100%;*/
+    /*position: relative*/
+    margin: auto;
+}
+
+.searchTerm {
+    float: left;
+    width: 100%;
+    border: 3px solid #00B4CC;
+    padding: 5px;
+    height: 13%;
+    border-radius: 5px;
+    outline: none;
+    color: #000;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.searchTerm:focus{
+    color: #000;
+}
+
+.searchButton {
+    position: relative;
+    right: -10px;
+    /*width: 40px;*/
+    /*height: 36px;*/
+    border: 1px solid #00B4CC;
+    background-color:#3fa338;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    /*font-size: 20px;*/
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+    width: 100%;
+    position: relative;
+    top: 13%;
+    display: flex;
+    /*left: 15%;*/
+    /*transform: translate(-50%, -50%);*/
+    text-align: center;
+}

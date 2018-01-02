@@ -1,0 +1,42 @@
+html, body {
+    height: 28px;
+    min-height: 28px;
+    font-family:verdana,arial,sans-serif;
+    color:#555555;
+}
+
+.navbar {height:28px;
+    min-height: 28px}
+
+.appTitle {
+    height: 28px;
+    min-height: 28px;
+    float: left;
+    font-size: 20px;
+    margin:0 auto;
+}
+
+.appTitle img {
+    height: 45px;
+    width:200px;
+    float:left;
+    margin-top: auto;
+    position: relative;
+}
+
+.appTitleText{
+    color : white;
+    font-weight:bold ;
+    margin: 5px 5px;
+    position:absolute;
+    font-family: "Helvetica";
+    font-size:18px;
+    margin-top: 0.6%;            /*TO MOVE TEXT UP DOWN*/
+}
+
+#retroclockbox1{
+    height: 28px;
+    width:280px;
+    float: right;
+    margin:2px;
+}

@@ -1,0 +1,445 @@
+.jsgrid{
+	font-size: 1em;
+}
+.progressForStatus{
+	margin-top: 5%;
+	width:80%;
+	margin-left: 5%;
+}
+.card_completed, .card_failed, .card_running, .card_notRun {
+	width: 75px;
+	height: 75px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	display: inline-block;
+	position: relative;
+	box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+	margin-left: 130px;
+	margin-right: 130px;
+	text-align: center;
+	line-height: 15px;
+	/*border: 2px solid #a1a1a1;*/
+}
+p{
+	text-align: left;
+	margin-bottom: 0.5rem;
+	font-size: larger;
+	margin-top: 0rem;
+}
+.toFitClock{
+	float: right;
+	width:50%;
+	margin-top: 2%;
+}
+.progress{
+	height:1.5rem;
+	margin-bottom: 10px;
+	width:95%;
+	font-size: large;
+	font-weight: bold;
+}
+.bg-notrun{
+	background-color: #9d9d9d;
+}
+
+#tiles {
+	margin-top: 4.5%;
+}
+
+/*#time{
+	float: right;
+	top:25px;
+	text-align: center;
+	!*display: block;*!
+	position: relative;
+	width: 130px;
+	height: 45px;
+	margin: 5px 20px;
+	display: inline-block;
+	background: #758ab7;
+}*/
+.colorRed{
+	background-color: crimson;
+}
+
+#current{
+	color: #ffffff;
+}
+
+.toggle-button {
+	background-color: white;
+	margin: 5px 0;
+	border-radius: 20px;
+	border: 2px solid #D0D0D0;
+	height: 24px;
+	cursor: pointer;
+	width: 50px;
+	position: relative;
+	display: inline-block;
+	user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+}
+.jsgrid-row td{
+	word-wrap: break-word;
+}
+
+.jsgrid-alt-row td{
+	word-wrap: break-word;
+}
+/*.jsgrid-grid-header{*/
+/*overflow: ;*/
+/*}*/
+.toggle-button button {
+	cursor: pointer;
+	outline: 0;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: 100%;
+	width: 30px;
+	height: 30px;
+	background-color: white;
+	float: left;
+	margin: -3px 0 0 -3px;
+	border: 2px solid #D0D0D0;
+	transition: left 0.3s;
+}
+
+.toggle-button-selected {
+	background-color: #83B152;
+	border: 2px solid #7DA652;
+}
+
+.toggle-button-selected button {
+	left: 26px;
+	top: 0;
+	margin: 0;
+	border: none;
+	width: 24px;
+	height: 24px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.center {
+	text-align: center;
+}
+tr.jsgrid-row {
+	height: 1rem;
+}
+/*body {*/
+	/*font-family: arial;*/
+	/*font-size: 12px;*/
+	/*color: #333;*/
+	/*margin: 8px;*/
+	/*width:99%;*/
+	/*max-width:99%;*/
+	/*overflow: visible;*/
+/*}*/
+.jsgrid-cell {
+	word-wrap: break-word
+}
+a {
+	/* color: #2ba6cb; */
+	/* color: #134d00; */
+	color: #009900;
+}
+
+/*#content {*/
+	/*background-color: blue;*/
+	/*width: 60%;*/
+	/*overflow: hidden;*/
+	/*position: absolute;*/
+	/*display: inline-block;*/
+	/*margin: auto;*/
+/*}*/
+
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+svg:not(:root){overflow:visible}
+/* Modal Content */
+.modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+/* The Close Button */
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.job-details-cell {
+	width: auto;
+	height: 100px;
+	text-align: center;
+	display: inline-block;
+	font: 34px;
+}
+
+.job-details-header {
+	width: auto;
+	height: 50px;
+	text-align: center;
+	display: inline-block;
+}
+
+.infoDescription {
+	/* background-color: lightgrey; */
+	border: 1px solid lightgrey;
+	background-color: white;
+	width: 100%;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 10px;
+	margin: 0px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.jsgrid-pager-container {
+	/* background-color: lightgrey; */
+	border: 1px solid lightgrey;
+	background-color: white;
+	width: 100%;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 10px;
+	margin: 0px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.clickable {
+	text-decoration: underline;
+}
+
+.clickable:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/* Overriding jsgrid properties to remove the scroll*/
+.jsgrid-grid-header {
+	overflow-y: visible;
+}
+
+.jsgrid-grid-body {
+	overflow-y: visible;
+}
+/*
+.appTitle {
+	height: 10%;
+	float: left;
+	font-size: 20px;
+	margin:0 auto;
+}
+
+.appTitle img {
+	height: 40%;
+	width:200px;
+	float:left;
+
+	position: relative;
+	margin-top: 2%;
+}
+
+.appTitleText{
+	color : black;
+	top:1.8%;
+	font-weight:bold ;
+	margin: 0px 12px;
+	 position:absolute;
+	font-family:Copperplate;
+	font-size:20px;
+}*/
+.clock2{
+	margin-top: 0% !important;
+	margin-right:0% !important;
+	float: right;
+	width:30%;
+}
+.refresh{
+	text-align: right;
+	width:29%!important;
+	float:left!important;
+	margin-left: 40%;
+	font-size: large;
+	font-style: italic;
+	font-family: Arial, sans-serif;
+   color: green;
+	margin-bottom:0%;
+}
+.clock2 ul{
+	height: 30px !important;
+}
+.errorLog, .copyLog {
+	display: inline-block;
+	/* position:absolute; */
+}
+
+.errorLog:hover {
+	cursor: pointer;
+	-webkit-transform: scale(1.1, 1.1);
+	transform: scale(1.1, 1.1);
+	-webkit-transition: transform 1.05s ease;
+	-moz-transition: transform 1.05s ease;
+	-ms-transition: transform 1.05s ease;
+}
+
+.copyLog:hover {
+	cursor: pointer;
+	-webkit-transform: scale(1.1, 1.1);
+	transform: scale(1.1, 1.1);
+	-webkit-transition: transform 1.05s ease;
+	-moz-transition: transform 1.05s ease;
+	-ms-transition: transform 1.05s ease;
+}
+
+#dataContainer {
+	width: 100%;
+	height: 300px;
+	align: center;
+	vertical-align: middle;
+	border-style: groove;
+	border-width: 1px;
+}
+
+#chartContainer {
+	margin: 5px;
+	float: left;
+	width: 97%;
+	height: 300px;
+	align: center;
+	vertical-align: middle;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	border-style: groove;
+}
+
+#pieChartContainer {
+	margin: 5px;
+	float: left;
+	width: 95%;
+	height: 300px;
+	align: center;
+	vertical-align: middle;
+	border-style: groove;
+}
+
+.spinner {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dimple-chart {
+	width: 100%;
+	height: 50%;
+	vertical-align: middle;
+}
+
+.selectorContainer {
+	width: 100%;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: top;
+	display: block;
+	float: top;
+}
+
+.graphTitle {
+	font-weight: bold;
+}
+
+#jobName,#listSubjectAreas {
+	background: transparent;
+	opacity: 1;
+	font-family: arial;
+	width: 350px;
+	font-size: 12px;
+	border: 0;
+	border-radius: 0;
+	-webkit-appearance: none;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	font-weight:bold;
+}
+#listSubjectAreas{
+	width: 250px;
+}
+
+#jobName:hover,#listSubjectAreas:hover {
+	box-shadow: 0 0 9px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	font-weight:normal;
+}
+
+#pageContainer{
+	width:100%;
+	position:relative
+}
+#modularJobLauncherSection{
+	width:48%;
+	float:left;
+	margin:10px 5px;
+}
+#modularJobLauncherSection div{
+	width:100%;
+}
+#cachJobLauncherSection{
+	width:50%;
+	float:left;
+	margin:10px 5px;
+}
+#cachJobLauncherSection div{
+	width:100%;
+}
+.cacheJobLaunchDivSection{
+	border-radius: 5px;
+	border: 1px solid lightgrey;
+	padding-left:30%;
+	padding-top:70px;
+	padding-bottom:70px;
+	font-family:Arial Rounded MT Bold;
+}
+
+.red{
+	background-color : #e74c3c ;
+	color:white;
+	font-weight: bold;
+	height: 100%;
+	width : 100%;
+	padding : 0;
+	margin: 0;
+}
+#check{
+	margin-top: 4%;
+	height: 70px;
+}

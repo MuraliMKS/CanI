@@ -1,0 +1,53 @@
+<div class="wrapper ">
+  <div class="box inlive-page" >
+    <div class="row row-offcanvas row-offcanvas-left">
+      <table><tr>
+        <td style="width: 30%">
+        </td>  <!-- main right col -->
+        <td style="width: 50%">
+          <div class="column col-md-6 col-sm-10 col-xs-8" id="main">
+
+            <!-- top nav -->
+            <div class="navbar navbar-blue">
+              <nav class="collapse navbar-collapse" role="navigation">
+                <ul id="navMain" class="nav navbar-nav" >
+                  <li>
+                    <a (click)="tab = 1">Table</a>
+                  </li>
+                  <li>
+                    <a (click)="tab = 2">Gantt Chart</a>
+                  </li>
+                  <li>
+                    <a (click)="tab = 3"  >Subject Area Dependency</a>
+                  </li>
+                  <li>
+                    <a (click)="tab = 4" >Team Status</a>
+                  </li>
+                 </ul>
+
+              </nav>
+            </div>
+            <!-- /top nav -->
+          </div>
+        </td>
+        <td style="width: 20%">
+       </td>
+      </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<div *ngIf="tab === 1">
+  gantt chart
+</div>
+
+<div *ngIf="tab === 2">
+table</div>
+
+<div *ngIf="tab === 3">
+  subject area
+</div>
+
+<div *ngIf="tab === 4">
+  team status
+</div>
